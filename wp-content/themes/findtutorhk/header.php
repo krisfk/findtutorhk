@@ -43,10 +43,13 @@
                         <div class="container">
 
 
-                            <a href="#" class="logo">logo</a>
+                            <div class="row">
 
-                            <ul class="top-menu-ul">
-                                <?php
+                                <div class="col-2"> <a href="#" class="logo">logo</a>
+                                </div>
+                                <div class="col-10">
+                                    <ul class="top-menu-ul">
+                                        <?php
                                     $main_menu = wp_get_menu_array('main menu');
 foreach ($main_menu as $menu_item) {
 
@@ -69,7 +72,7 @@ if(count($menu_item['children']))
     echo '<ul class="mobile-menu-submenu">';
 ?>
 
-                                <?php
+                                        <?php
     
     foreach ($menu_item['children'] as $sub_menu_item) 
     {
@@ -99,7 +102,12 @@ echo'</li>';
 
 ?>
 
-                            </ul>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
                         </div>
 
                     </header>
