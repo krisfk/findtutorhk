@@ -46,12 +46,59 @@
                             <a href="#" class="logo">logo</a>
 
                             <ul class="top-menu-ul">
-                                <li><a href="#">主頁</a></li>
-                                <li><a href="#">找尋導師</a></li>
-                                <li><a href="#">補習個案</a></li>
-                                <li><a href="#">家長免費找尋導師</a></li>
-                                <li><a href="#">新導師登記</a></li>
-                                <li><a href="#">精選比較</a></li>
+                                <?php
+                                    $main_menu = wp_get_menu_array('main menu');
+foreach ($main_menu as $menu_item) {
+
+$url = $menu_item['url'];
+$title = $menu_item['title'];
+$class = $menu_item['class'];
+
+$temp_arr=explode(get_site_url(),$url);
+$slug=str_replace('/en/','',$temp_arr[1]);
+$slug=str_replace('/cn/','',$slug);
+$slug=str_replace('/','',$slug);
+
+
+if(count($menu_item['children']))
+{
+  
+    echo '<li><a class="level-1 parent '.$class.'" href="'.$url.'">'.$title.'</a>';
+
+ 
+    echo '<ul class="mobile-menu-submenu">';
+?>
+
+                                <?php
+    
+    foreach ($menu_item['children'] as $sub_menu_item) 
+    {
+        $sub_url = $sub_menu_item['url'];
+        $sub_title = $sub_menu_item['title'];
+        
+        $sub_temp_arr=explode(get_site_url(),$sub_url);
+        $sub_slug=str_replace('/en/','',$sub_temp_arr[1]);
+        $sub_slug=str_replace('/cn/','',$sub_slug);
+        $sub_slug=str_replace('/','',$sub_slug);
+        echo'<li><a class="'.$sub_slug.'" href="'.$sub_url.'">'.$sub_title.'</a></li>';
+    }
+    echo '</ul>';
+
+}
+else
+{
+echo '<li><a class="level-1 '.$slug.' '.$class.'" href="'.$url.'">'.$title.'</a>';
+
+}
+echo'</li>';
+
+
+}
+
+
+
+?>
+
                             </ul>
                         </div>
 
