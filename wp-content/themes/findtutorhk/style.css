@@ -100,4 +100,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     display: inline-block;
     background: #292929;
     color: #fff;
+    padding: 5rem;
+    font-size: 2rem;
 }
