@@ -131,7 +131,8 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 }
 
 .dummy-case-img {
-    height: 400px;
+    width: 100%;
+    /* height: 400px; */
 }
 
 .home-tutor-case-div {
