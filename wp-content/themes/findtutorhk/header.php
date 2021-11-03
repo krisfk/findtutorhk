@@ -43,7 +43,7 @@
                         <div class="container">
 
 
-                            <div class="row">
+                            <div class="row align-center">
 
                                 <div class="col-2"> <a href="#" class="logo">logo</a>
                                 </div>
