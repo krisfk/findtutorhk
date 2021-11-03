@@ -22,8 +22,10 @@ get_header(); ?>
 
         <div class="col-12">
 
-            whatsapp 查詢: <br>
-            9999 9999
+            <div class="blk">
+                whatsapp 查詢: <br>
+                9999 9999
+            </div>
         </div>
 
     </div>
