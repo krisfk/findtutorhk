@@ -104,6 +104,19 @@ get_header(); ?>
 
     <h2 class="text-center">最新導師</h2>
 
+    <div class="row">
+        <div class="col-3 home-tutor-case-div"> <a href="#">
+                <img class="dummy-case-img"
+                    src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.10.35-PM.png"
+                    alt="">
+            </a>
+
+        </div>
+
+    </div>
+
+
+
 </div>
 
 
