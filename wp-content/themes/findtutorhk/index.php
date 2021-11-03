@@ -102,7 +102,7 @@ get_header(); ?>
 
 
 
-    <h2 class="text-center">最新導師</h2>
+    <h2 class="text-center mb-3">最新導師</h2>
 
     <div class="row">
         <div class="col-3 home-tutor-case-div"> <a href="#">
