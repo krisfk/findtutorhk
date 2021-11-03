@@ -40,7 +40,8 @@ get_header(); ?>
     <h2 class="text-center">最新補習個案</h2>
 
     <a href="#">
-        <img src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.05.26-PM.png" alt="">
+        <img class="dummy-case-img"
+            src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.05.26-PM.png" alt="">
 
     </a>
 
