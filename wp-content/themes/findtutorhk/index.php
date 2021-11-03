@@ -26,6 +26,16 @@ get_header(); ?>
                 whatsapp 查詢: <br>
                 9999 9999
             </div>
+
+            <a href="" class="blk">
+
+                家長找導師
+            </a>
+            <a href="">
+
+                新導師登記
+
+            </a>
         </div>
 
     </div>
