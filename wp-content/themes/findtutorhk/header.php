@@ -44,6 +44,15 @@
 
 
                             <a href="#" class="logo">logo</a>
+
+                            <ul class="top-menu-ul">
+                                <li><a href="#">主頁</a></li>
+                                <li><a href="#">找尋導師</a></li>
+                                <li><a href="#">補習個案</a></li>
+                                <li><a href="#">家長免費找尋導師</a></li>
+                                <li><a href="#">新導師登記</a></li>
+                                <li><a href="#">精選比較</a></li>
+                            </ul>
                         </div>
 
                     </header>
