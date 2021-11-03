@@ -37,7 +37,7 @@ get_header(); ?>
         </div>
 
     </div>
-    <h2 class="text-center">最新補習個案</h2>
+    <h2 class="text-center mb-3">最新補習個案</h2>
 
     <div class="row">
 
