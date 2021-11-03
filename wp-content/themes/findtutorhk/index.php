@@ -16,7 +16,9 @@
 
 get_header(); ?>
 
+<div>最新補習個案</div>
 
+<div>最新導師</div>
 
 <?php
 get_footer();
