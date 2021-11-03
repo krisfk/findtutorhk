@@ -31,7 +31,7 @@ get_header(); ?>
 
                 家長找導師
             </a>
-            <a href="">
+            <a href="" class="blk">
 
                 新導師登記
 
