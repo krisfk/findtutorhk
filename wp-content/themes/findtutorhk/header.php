@@ -38,4 +38,12 @@
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
 
-                    <div>fds</div>
+                    <header>
+
+                        <div class="container">
+
+
+                            <a href="#" class="logo">logo</a>
+                        </div>
+
+                    </header>
