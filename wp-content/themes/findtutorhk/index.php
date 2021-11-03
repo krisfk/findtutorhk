@@ -39,11 +39,37 @@ get_header(); ?>
     </div>
     <h2 class="text-center">最新補習個案</h2>
 
-    <a href="#">
-        <img class="dummy-case-img"
-            src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.05.26-PM.png" alt="">
+    <div class="row">
 
-    </a>
+        <div class="col-3"> <a href="#">
+                <img class="dummy-case-img"
+                    src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.05.26-PM.png"
+                    alt="">
+            </a>
+
+        </div>
+        <div class="col-3"> <a href="#">
+                <img class="dummy-case-img"
+                    src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.05.26-PM.png"
+                    alt="">
+            </a>
+
+        </div>
+        <div class="col-3"> <a href="#">
+                <img class="dummy-case-img"
+                    src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.05.26-PM.png"
+                    alt="">
+            </a>
+
+        </div>
+        <div class="col-3"> <a href="#">
+                <img class="dummy-case-img"
+                    src="https://findtutorhk.com/wp-content/uploads/2021/11/Screenshot-2021-11-03-at-6.05.26-PM.png"
+                    alt="">
+            </a>
+
+        </div>
+    </div>
 
 
 
