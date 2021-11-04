@@ -32,7 +32,11 @@ get_header();
                 <br> <br>
                 我們絕不會向家長／學生收取任何形式的費用。
             </div>
-            <div class="col-5">d</div>
+            <div class="col-5">
+                <div class="blk">
+                    whatsapp 查詢: 9999 9999
+                </div>
+            </div>
 
         </div>
     </div>
