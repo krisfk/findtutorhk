@@ -13,7 +13,17 @@ get_header();
 
 ?>
 <div class="container">
-    fds
+
+
+    <div class="step-instruction-div">
+
+        <ul>
+            <li>聯絡人資料</li>
+            <li>學生資料</li>
+            <li>補習與導師要求</li>
+            <li>確認找尋導師</li>
+        </ul>
+    </div>
 </div>
 <?php
 get_footer();

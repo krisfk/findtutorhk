@@ -138,3 +138,12 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .home-tutor-case-div {
     margin: 0 0 2rem 0;
 }
+
+.step-instruction-div ul {
+    margin: 0;
+    padding: 0;
+}
+
+.step-instruction-div ul li {
+    display: inline-block;
+}
