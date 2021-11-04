@@ -12,6 +12,8 @@
 get_header();
 
 ?>
-111
+<div class="container">
+    fds
+</div>
 <?php
 get_footer();
