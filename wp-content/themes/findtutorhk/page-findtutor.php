@@ -24,6 +24,13 @@ get_header();
             <li class="notice-step-4 notice-step ">4.確認找尋導師</li>
         </ul>
     </div>
+
+    <div class="row">
+
+        <div class="col-7"></div>
+        <div class="col-5"></div>
+
+    </div>
 </div>
 <?php
 get_footer();
