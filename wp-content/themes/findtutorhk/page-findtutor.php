@@ -15,7 +15,7 @@ get_header();
 <div class="container">
 
 
-    <div class="step-instruction-div">
+    <div class="step-instruction-div mt-5">
 
         <ul>
             <li class="notice-step-1 notice-step active">1.聯絡人資料</li>
