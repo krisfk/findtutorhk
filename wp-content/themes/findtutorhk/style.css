@@ -147,4 +147,5 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 
 .step-instruction-div ul li {
     display: inline-block;
+    border: 1px solid;
 }
