@@ -18,10 +18,10 @@ get_header();
     <div class="step-instruction-div">
 
         <ul>
-            <li>聯絡人資料</li>
-            <li>學生資料</li>
-            <li>補習與導師要求</li>
-            <li>確認找尋導師</li>
+            <li class="notice-step-1 notice-step active">聯絡人資料</li>
+            <li class="notice-step-2 notice-step ">學生資料</li>
+            <li class="notice-step-3 notice-step ">補習與導師要求</li>
+            <li class="notice-step-4 notice-step ">確認找尋導師</li>
         </ul>
     </div>
 </div>
