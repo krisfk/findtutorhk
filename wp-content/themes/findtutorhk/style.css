@@ -194,3 +194,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     display: block;
     margin: 1rem 0 0.5rem 0;
 }
+
+.tutorial-info-subject-title:hover {
+    color: #fff;
+}
