@@ -68,7 +68,7 @@ get_header();
             </div>
             <div class="col-3">
                 <div class="blk">
-                    whatsapp 查詢: 9999 9999
+                    whatsapp 查詢: <br> 9999 9999
                 </div>
             </div>
 
