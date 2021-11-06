@@ -134,6 +134,42 @@ get_header();
                     <div class="tutorial-info">checkbox</div>
 
 
+                    <table>
+
+
+                        <tr>
+                            <td class="form-label">要求上課周次</td>
+                            <td>
+                                <select name="" class="form-control">
+                                    <option value=""></option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">每次時間</td>
+                            <td>
+                                <select name="" class="form-control">
+                                    <option value=""></option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">上課時間</td>
+                            <td>
+                            <td><input type="text" class="form-control"></td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">學生學費(每小時)</td>
+                            <td>
+                            <td><input type="text" class="form-control"></td>
+
+                            </td>
+                        </tr>
+                    </table>
 
                 </div>
 
