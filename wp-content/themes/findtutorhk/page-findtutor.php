@@ -35,7 +35,7 @@ get_header();
 
                 <div class="student-step student-step-1">
 
-                    <div class="step-title">1.聯絡人資料</div>
+                    <div class="step-title">1. 聯絡人資料</div>
                     <table class="form-table">
                         <tr>
                             <td class="form-label">聯絡人姓名*</td>
@@ -68,7 +68,7 @@ get_header();
 
                 <div class="student-step student-step-1">
 
-                    <div class="step-title">1.聯絡人資料</div>
+                    <div class="step-title">2. 學生資料</div>
                     <table class="form-table">
                         <tr>
                             <td class="form-label">聯絡人姓名*</td>
