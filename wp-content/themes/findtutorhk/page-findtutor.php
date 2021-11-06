@@ -134,7 +134,7 @@ get_header();
                     <div class="tutorial-info">checkbox</div>
 
 
-                    <table class="mt-4">
+                    <table class="mt-4 form-table">
 
 
                         <tr>
