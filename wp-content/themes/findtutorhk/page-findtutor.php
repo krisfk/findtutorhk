@@ -84,7 +84,6 @@ get_header();
                         </tr>
                         <tr>
                             <td class="form-label">學生姓別</td>
-                            <td>
 
                             <td><input type="text" class="form-control"></td>
 
@@ -92,7 +91,6 @@ get_header();
                         </tr>
                         <tr>
                             <td class="form-label">學生學校</td>
-                            <td>
 
                             <td><input type="text" class="form-control"></td>
 
