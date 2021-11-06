@@ -175,3 +175,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .student-step {
     margin: 1rem 0 0 0;
 }
+
+.form-table td {
+    padding: 0 1rem 0 0;
+}

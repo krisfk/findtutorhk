@@ -36,7 +36,7 @@ get_header();
                 <div class="student-step student-step-1">
 
                     <div class="step-title">1.聯絡人資料</div>
-                    <table>
+                    <table class="form-table">
                         <tr>
                             <td>聯絡人姓名*</td>
                             <td><input type="text" class="form-control"></td>
