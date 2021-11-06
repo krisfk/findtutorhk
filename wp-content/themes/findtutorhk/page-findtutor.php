@@ -38,19 +38,19 @@ get_header();
                     <div class="step-title">1.聯絡人資料</div>
                     <table class="form-table">
                         <tr>
-                            <td>聯絡人姓名*</td>
+                            <td class="form-label">聯絡人姓名*</td>
                             <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td>手提電話*</td>
+                            <td class="form-label">手提電話*</td>
                             <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td>電郵</td>
+                            <td class="form-label">電郵</td>
                             <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td>與學生關係</td>
+                            <td class="form-label">與學生關係</td>
                             <td>
 
                                 <select name="" class="form-control">
