@@ -181,6 +181,6 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 }
 
 .step-btn {
-    background: #a0c435;
-    color: #fff;
+    background: #a0c435 !important;
+    color: #fff !important;
 }
