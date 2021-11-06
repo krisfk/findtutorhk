@@ -179,3 +179,8 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .form-table td {
     padding: 0.5rem 1rem 0.5rem 0;
 }
+
+.step-btn {
+    background: #a0c435;
+    color: #fff;
+}

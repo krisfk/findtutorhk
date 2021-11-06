@@ -60,7 +60,7 @@ get_header();
                             </td>
                         </tr>
                         <tr>
-                            <td> <a href="javascript:void(0);" class="btn step2-btn"> 填寫下一步</a></td>
+                            <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 填寫下一步</a></td>
                             <td></td>
                         </tr>
                     </table>
