@@ -33,17 +33,38 @@ get_header();
                 我們絕不會向家長／學生收取任何形式的費用。
 
 
-                <div>
+                <div class="student-step student-step-1">
 
+                    <div class="">聯絡人資料</div>
+                    <table>
+                        <tr>
+                            <td>聯絡人姓名*</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>手提電話*</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>電郵</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>與學生關係</td>
+                            <td>
 
-                    <?php
-                
-                echo do_shortcode('[contact-form-7 id="64" title="student register"]');
-                
-                ?>
+                                <select name="" class="form-control">
+                                    <option value=""></option>
+
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
 
 
                 </div>
+
+
             </div>
             <div class="col-3">
                 <div class="blk">
