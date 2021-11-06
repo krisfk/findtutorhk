@@ -85,7 +85,10 @@ get_header();
                         <tr>
                             <td class="form-label">學生姓別</td>
 
-                            <td><input type="text" class="form-control"></td>
+                            <td> <select name="" class="form-control">
+                                    <option value=""></option>
+
+                                </select></td>
 
                             </td>
                         </tr>
