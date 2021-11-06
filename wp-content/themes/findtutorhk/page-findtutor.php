@@ -71,19 +71,35 @@ get_header();
                     <div class="step-title">2. 學生資料</div>
                     <table class="form-table">
                         <tr>
-                            <td class="form-label">聯絡人姓名*</td>
+                            <td class="form-label">補習地點*</td>
                             <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td class="form-label">手提電話*</td>
+                            <td class="form-label">居住屋苑</td>
                             <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td class="form-label">電郵</td>
+                            <td class="form-label">學生年齡</td>
                             <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td class="form-label">與學生關係</td>
+                            <td class="form-label">學生姓別</td>
+                            <td>
+
+                            <td><input type="text" class="form-control"></td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">學生學校</td>
+                            <td>
+
+                            <td><input type="text" class="form-control"></td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">學生級別</td>
                             <td>
 
                                 <select name="" class="form-control">
@@ -92,6 +108,8 @@ get_header();
                                 </select>
                             </td>
                         </tr>
+
+
                         <tr>
                             <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 填寫下一步</a></td>
                             <td></td>
