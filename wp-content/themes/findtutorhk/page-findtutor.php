@@ -25,7 +25,7 @@ get_header();
         </ul>
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5 form-container">
         <div class="row">
 
             <div class="col-9">家長或學生可以透過本站網上登記找尋補習導師，一般而言，我們會在短時間內成功找到合適的導師。
