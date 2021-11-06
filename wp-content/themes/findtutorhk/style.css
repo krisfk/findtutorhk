@@ -161,4 +161,5 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 
 .form-container {
     max-width: 1000px;
+    margin: 0 auto;
 }
