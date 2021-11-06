@@ -157,15 +157,15 @@ get_header();
                         </tr>
                         <tr>
                             <td class="form-label">上課時間</td>
-                            < <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
 
-                                </td>
+                            </td>
                         </tr>
                         <tr>
                             <td class="form-label">學生學費(每小時)</td>
-                            < <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
 
-                                </td>
+                            </td>
                         </tr>
                     </table>
 
