@@ -169,6 +169,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     background: rgb(174, 169, 26);
     color: #fff;
     padding: 0.5rem 1rem;
+    margin: 0 0 1rem 0;
 }
 
 .student-step {
