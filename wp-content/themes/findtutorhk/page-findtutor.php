@@ -64,8 +64,39 @@ get_header();
                             <td></td>
                         </tr>
                     </table>
+                </div>
 
+                <div class="student-step student-step-1">
 
+                    <div class="step-title">1.聯絡人資料</div>
+                    <table class="form-table">
+                        <tr>
+                            <td class="form-label">聯絡人姓名*</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">手提電話*</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">電郵</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">與學生關係</td>
+                            <td>
+
+                                <select name="" class="form-control">
+                                    <option value=""></option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 填寫下一步</a></td>
+                            <td></td>
+                        </tr>
+                    </table>
                 </div>
 
 
