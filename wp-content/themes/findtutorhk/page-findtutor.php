@@ -122,8 +122,19 @@ get_header();
                 <div class="student-step student-step-1">
 
                     <div class="step-title">3. 補習資料</div>
+                    <a href="javascript:void(0);" class="tutorial-info-subject-title">補習</a>
+                    <div class="tutorial-info">checkbox</div>
+                    <a href="javascript:void(0);" class="tutorial-info-subject-title">會話</a>
+                    <div class="tutorial-info">checkbox</div>
 
-                    fdsf
+                    <a href="javascript:void(0);" class="tutorial-info-subject-title">音樂</a>
+                    <div class="tutorial-info">checkbox</div>
+
+                    <a href="javascript:void(0);" class="tutorial-info-subject-title">其他</a>
+                    <div class="tutorial-info">checkbox</div>
+
+
+
                 </div>
 
 
