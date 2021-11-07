@@ -175,23 +175,13 @@ get_header();
                 <div class="student-step student-step-1">
 
                     <div class="step-title">3.2 導師要求</div>
-                    <a href="javascript:void(0);" class="tutorial-info-subject-title">補習</a>
-                    <div class="tutorial-info">checkbox</div>
-                    <a href="javascript:void(0);" class="tutorial-info-subject-title">會話</a>
-                    <div class="tutorial-info">checkbox</div>
-
-                    <a href="javascript:void(0);" class="tutorial-info-subject-title">音樂</a>
-                    <div class="tutorial-info">checkbox</div>
-
-                    <a href="javascript:void(0);" class="tutorial-info-subject-title">其他</a>
-                    <div class="tutorial-info">checkbox</div>
 
 
                     <table class="mt-4 form-table">
 
 
                         <tr>
-                            <td class="form-label">要求上課周次</td>
+                            <td class="form-label">導師姓別要求</td>
                             <td>
                                 <select name="" class="form-control">
                                     <option value=""></option>
@@ -199,27 +189,7 @@ get_header();
                                 </select>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="form-label">每次時間</td>
-                            <td>
-                                <select name="" class="form-control">
-                                    <option value=""></option>
 
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="form-label">上課時間</td>
-                            <td><input type="text" class="form-control"></td>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="form-label">學生學費(每小時)</td>
-                            <td><input type="text" class="form-control"></td>
-
-                            </td>
-                        </tr>
                     </table>
 
                 </div>
