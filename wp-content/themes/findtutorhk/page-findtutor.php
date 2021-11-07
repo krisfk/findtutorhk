@@ -159,13 +159,13 @@ get_header();
                             <td class="form-label">上課時間</td>
                             <td><input type="text" class="form-control"></td>
 
-                            </td>
+
                         </tr>
                         <tr>
                             <td class="form-label">學生學費(每小時)</td>
                             <td><input type="text" class="form-control"></td>
 
-                            </td>
+
                         </tr>
                     </table>
 
@@ -187,6 +187,12 @@ get_header();
                                     <option value=""></option>
 
                                 </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">導師語言</td>
+                            <td>
+
                             </td>
                         </tr>
 
