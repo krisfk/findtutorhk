@@ -194,6 +194,24 @@ get_header();
                             <td><input type="text" class="form-control"></td>
 
                         </tr>
+                        <tr>
+                            <td class="form-label"> 導師最低學歷要求
+                            </td>
+                            <td> <select name="" class="form-control">
+                                    <option value=""></option>
+
+                                </select></td>
+                        </tr>
+
+                        <tr>
+                            <td>其他資料/要求</td>
+                            <td><textarea name="" id="" cols="30" rows="10" class="form-control"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td>導師編號</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
 
                     </table>
 
