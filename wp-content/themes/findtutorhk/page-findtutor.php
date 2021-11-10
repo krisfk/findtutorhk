@@ -297,6 +297,11 @@ $(function() {
         $('.student-step').fadeOut(0);
         $('.student-step-3').fadeIn(0);
     });
+    $('.open-step-btn-4').click(function() {
+        $('.student-step').fadeOut(0);
+        $('.student-step-4').fadeIn(0);
+    });
+
 })
 </script>
 <?php
