@@ -214,10 +214,10 @@ get_header();
                         </tr>
 
                         <tr>
-                            <td>
                             <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 填寫下一步</a></td>
+                            <td>
+
                             </td>
-                            <td></td>
                         </tr>
 
 
