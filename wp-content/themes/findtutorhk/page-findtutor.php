@@ -277,5 +277,13 @@ get_header();
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+$(function() {
+
+    $('.student-step').fadeOut(0);
+    $('.student-step-1').fadeIn(0);
+})
+</script>
 <?php
 get_footer();
