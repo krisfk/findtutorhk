@@ -191,9 +191,8 @@ get_header();
                         </tr>
                         <tr>
                             <td class="form-label">導師語言</td>
-                            <td>
+                            <td><input type="text" class="form-control"></td>
 
-                            </td>
                         </tr>
 
                     </table>
