@@ -254,7 +254,7 @@ get_header();
                         <tr>
 
                             <td colspan="2"><a href="javascript:void(0);" class="btn open-step-btn-3 step-btn me-3">
-                                    返回上一步</a><a href="javascript:void(0);" class="btnstep-btn submit-btn">
+                                    返回上一步</a><a href="javascript:void(0);" class="btnstep-btn step-btn">
                                     提交資料找尋導師</a></td>
 
 
