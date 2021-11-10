@@ -279,6 +279,7 @@ get_header();
 </div>
 
 <script type="text/javascript">
+var $ = jQuery;
 $(function() {
 
     $('.student-step').fadeOut(0);
