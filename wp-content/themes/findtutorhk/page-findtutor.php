@@ -60,7 +60,7 @@ get_header();
                             </td>
                         </tr>
                         <tr>
-                            <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 填寫下一步</a></td>
+                            <td> <a href="javascript:void(0);" class="btn open-step-btn-2 step-btn"> 填寫下一步</a></td>
                             <td></td>
                         </tr>
                     </table>
@@ -112,8 +112,9 @@ get_header();
 
 
                         <tr>
-                            <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 填寫下一步</a></td>
-                            <td></td>
+                            <td><a href="javascript:void(0);" class="btn open-step-btn-2 step-btn"> 返回上一步</a></td>
+                            <td> <a href="javascript:void(0);" class="btn open-step-btn-3 step-btn"> 填寫下一步</a></td>
+
                         </tr>
                     </table>
                 </div>
@@ -214,10 +215,12 @@ get_header();
                         </tr>
 
                         <tr>
-                            <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 填寫下一步</a></td>
-                            <td>
+                            <td><a href="javascript:void(0);" class="btn open-step-btn-3 step-btn"> 返回上一步</a>
 
                             </td>
+                            <td> <a href="javascript:void(0);" class="btn open-step-btn-4 step-btn"> 填寫下一步</a></td>
+                            <td>
+
                         </tr>
 
 
@@ -248,9 +251,12 @@ get_header();
                             </td>
                         </tr>
                         <tr>
+
+                            <td><a href="javascript:void(0);" class="btn open-step-btn-3 step-btn"> 返回上一步</a>
+
+                            </td>
                             <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 提交資料找尋導師</a></td>
                             </td>
-                            <td></td>
                         </tr>
 
 
