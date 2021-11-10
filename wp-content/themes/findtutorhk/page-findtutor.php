@@ -112,8 +112,9 @@ get_header();
 
 
                         <tr>
-                            <td><a href="javascript:void(0);" class="btn open-step-btn-2 step-btn"> 返回上一步</a></td>
-                            <td> <a href="javascript:void(0);" class="btn open-step-btn-3 step-btn"> 填寫下一步</a></td>
+                            <td colspan="2"><a href="javascript:void(0);" class="btn open-step-btn-2 step-btn">
+                                    返回上一步</a><a href="javascript:void(0);" class="btn open-step-btn-3 step-btn">
+                                    填寫下一步</a></td>
 
                         </tr>
                     </table>
