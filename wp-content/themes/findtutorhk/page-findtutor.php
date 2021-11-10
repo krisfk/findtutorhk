@@ -248,7 +248,6 @@ get_header();
                             </td>
                         </tr>
                         <tr>
-                            <td>
                             <td> <a href="javascript:void(0);" class="btn step-btn-2 step-btn"> 提交資料找尋導師</a></td>
                             </td>
                             <td></td>
