@@ -284,6 +284,15 @@ $(function() {
 
     $('.student-step').fadeOut(0);
     $('.student-step-1').fadeIn(0);
+
+    $('.open-step-btn-2').click(function() {
+        $('.student-step').fadeOut(0);
+        $('.student-step-2').fadeIn(0);
+    });
+    $('.open-step-btn-3').click(function() {
+        $('.student-step').fadeOut(0);
+        $('.student-step-3').fadeIn(0);
+    });
 })
 </script>
 <?php
