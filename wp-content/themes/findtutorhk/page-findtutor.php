@@ -66,7 +66,7 @@ get_header();
                     </table>
                 </div>
 
-                <div class="student-step student-step-1">
+                <div class="student-step student-step-2">
 
                     <div class="step-title">2. 學生資料</div>
                     <table class="form-table">
@@ -119,7 +119,7 @@ get_header();
                 </div>
 
 
-                <div class="student-step student-step-1">
+                <div class="student-step student-step-3">
 
                     <div class="step-title">3.1 補習資料</div>
                     <a href="javascript:void(0);" class="tutorial-info-subject-title">補習</a>
@@ -172,7 +172,7 @@ get_header();
                 </div>
 
 
-                <div class="student-step student-step-1">
+                <div class="student-step student-step-3">
 
                     <div class="step-title">3.2 導師要求</div>
 
@@ -212,6 +212,15 @@ get_header();
                             <td>導師編號</td>
                             <td><input type="text" class="form-control"></td>
                         </tr>
+
+
+                    </table>
+
+                </div>
+
+                <div class="student-step student-step-4">
+
+                    <table class="mt-4 form-table">
                         <tr>
                             <td colspan="2">
 
@@ -230,7 +239,6 @@ get_header();
                         </tr>
 
                     </table>
-
                 </div>
 
 
