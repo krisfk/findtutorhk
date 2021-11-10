@@ -112,7 +112,7 @@ get_header();
 
 
                         <tr>
-                            <td colspan="2"><a href="javascript:void(0);" class="btn open-step-btn-2 step-btn me-3">
+                            <td colspan="2"><a href="javascript:void(0);" class="btn open-step-btn-1 step-btn me-3">
                                     返回上一步</a><a href="javascript:void(0);" class="btn open-step-btn-3 step-btn">
                                     填寫下一步</a></td>
 
@@ -285,6 +285,10 @@ $(function() {
     $('.student-step').fadeOut(0);
     $('.student-step-1').fadeIn(0);
 
+    $('.open-step-btn-1').click(function() {
+        $('.student-step').fadeOut(0);
+        $('.student-step-1').fadeIn(0);
+    });
     $('.open-step-btn-2').click(function() {
         $('.student-step').fadeOut(0);
         $('.student-step-2').fadeIn(0);
