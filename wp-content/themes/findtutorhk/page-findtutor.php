@@ -213,7 +213,7 @@ get_header();
                             <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td col="2">
+                            <td colspan="2">
 
                                 <input type="checkbox">
                                 本人得悉ECtutor有關使用方式及服務條件，並遵守服務條款。
@@ -221,7 +221,7 @@ get_header();
                             </td>
                         </tr>
                         <tr>
-                            <td col="2">
+                            <td colspan="2">
                                 <input type="checkbox">
 
                                 本人保證以上資料正確無誤。
