@@ -320,15 +320,25 @@ class WPCF7_FormTagsManager {
 
 			$scanned_tag['raw_values'] = (array) $attr['values'];
 
+			// if ( WPCF7_USE_PIPE ) {
+			// 	$pipes = new WPCF7_Pipes( $scanned_tag['raw_values'] );
+			// 	$scanned_tag['values'] = $pipes->collect_befores();
+			// 	$scanned_tag['pipes'] = $pipes;
+			// } else {
+			// 	$scanned_tag['values'] = $scanned_tag['raw_values'];
+			// }
 			if ( WPCF7_USE_PIPE ) {
 				$pipes = new WPCF7_Pipes( $scanned_tag['raw_values'] );
-				$scanned_tag['values'] = $pipes->collect_befores();
+				//$scanned_tag['values'] = $pipes->collect_befores();
+				$scanned_tag['values'] = $pipes->collect_afters();
 				$scanned_tag['pipes'] = $pipes;
-			} else {
+				$scanned_tag['labels'] = $pipes->collect_befores();
+			  } else {
 				$scanned_tag['values'] = $scanned_tag['raw_values'];
-			}
+				$scanned_tag['labels'] = $scanned_tag['values'];
+			  }
 
-			$scanned_tag['labels'] = $scanned_tag['values'];
+			// $scanned_tag['labels'] = $scanned_tag['values'];
 
 		} else {
 			$scanned_tag['attr'] = $attr;
@@ -339,42 +349,42 @@ class WPCF7_FormTagsManager {
 
 		$content = trim( $m[5] );
 		$content = preg_replace( "/<br[\r\n\t ]*\/?>$/m", '', $content );
-		$scanned_tag['content'] = $content;
+$scanned_tag['content'] = $content;
 
-		$scanned_tag = apply_filters( 'wpcf7_form_tag', $scanned_tag, $replace );
+$scanned_tag = apply_filters( 'wpcf7_form_tag', $scanned_tag, $replace );
 
-		$scanned_tag = new WPCF7_FormTag( $scanned_tag );
+$scanned_tag = new WPCF7_FormTag( $scanned_tag );
 
-		$this->scanned_tags[] = $scanned_tag;
+$this->scanned_tags[] = $scanned_tag;
 
-		if ( $replace ) {
-			$func = $this->tag_types[$tag]['function'];
-			return $m[1] . call_user_func( $func, $scanned_tag ) . $m[6];
-		} else {
-			return $m[0];
-		}
-	}
+if ( $replace ) {
+$func = $this->tag_types[$tag]['function'];
+return $m[1] . call_user_func( $func, $scanned_tag ) . $m[6];
+} else {
+return $m[0];
+}
+}
 
-	private function parse_atts( $text ) {
-		$atts = array( 'options' => array(), 'values' => array() );
-		$text = preg_replace( "/[\x{00a0}\x{200b}]+/u", " ", $text );
-		$text = trim( $text );
+private function parse_atts( $text ) {
+$atts = array( 'options' => array(), 'values' => array() );
+$text = preg_replace( "/[\x{00a0}\x{200b}]+/u", " ", $text );
+$text = trim( $text );
 
-		$pattern = '%^([-+*=0-9a-zA-Z:.!?#$&@_/|\%\r\n\t ]*?)((?:[\r\n\t ]*"[^"]*"|[\r\n\t ]*\'[^\']*\')*)$%';
+$pattern = '%^([-+*=0-9a-zA-Z:.!?#$&@_/|\%\r\n\t ]*?)((?:[\r\n\t ]*"[^"]*"|[\r\n\t ]*\'[^\']*\')*)$%';
 
-		if ( preg_match( $pattern, $text, $match ) ) {
-			if ( ! empty( $match[1] ) ) {
-				$atts['options'] = preg_split( '/[\r\n\t ]+/', trim( $match[1] ) );
-			}
+if ( preg_match( $pattern, $text, $match ) ) {
+if ( ! empty( $match[1] ) ) {
+$atts['options'] = preg_split( '/[\r\n\t ]+/', trim( $match[1] ) );
+}
 
-			if ( ! empty( $match[2] ) ) {
-				preg_match_all( '/"[^"]*"|\'[^\']*\'/', $match[2], $matched_values );
-				$atts['values'] = wpcf7_strip_quote_deep( $matched_values[0] );
-			}
-		} else {
-			$atts = $text;
-		}
+if ( ! empty( $match[2] ) ) {
+preg_match_all( '/"[^"]*"|\'[^\']*\'/', $match[2], $matched_values );
+$atts['values'] = wpcf7_strip_quote_deep( $matched_values[0] );
+}
+} else {
+$atts = $text;
+}
 
-		return $atts;
-	}
+return $atts;
+}
 }
