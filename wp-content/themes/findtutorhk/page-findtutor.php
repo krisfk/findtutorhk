@@ -25,10 +25,12 @@ get_header();
         </ul>
     </div>
 
-    <!-- <div class="mt-5 form-container">
+    <div class="mt-5 form-container">
         <div class="row">
 
-            <div class="col-9">家長或學生可以透過本站網上登記找尋補習導師，一般而言，我們會在短時間內成功找到合適的導師。
+            <div class="col-9">
+
+                <!-- 家長或學生可以透過本站網上登記找尋補習導師，一般而言，我們會在短時間內成功找到合適的導師。
                 <br> <br>
                 我們絕不會向家長／學生收取任何形式的費用。
 
@@ -262,7 +264,7 @@ get_header();
 
 
                     </table>
-                </div>
+                </div> -->
 
 
 
@@ -275,7 +277,7 @@ get_header();
             </div>
 
         </div>
-    </div> -->
+    </div>
 </div>
 
 <script type="text/javascript">
