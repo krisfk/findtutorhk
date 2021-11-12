@@ -323,7 +323,7 @@ $(function() {
     $('.open-step-btn-3').click(function() {
 
         var location = $('select[name="location"]').val();
-        var gender = $('input[name="gender"]').val();
+        var gender = $('input[name="gender"]:checked').val();
 
         var error_txt = '';
 
