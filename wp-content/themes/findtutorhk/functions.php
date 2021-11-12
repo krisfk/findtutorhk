@@ -742,6 +742,8 @@ function example_callback_id_generated($attachment_id ) {
     // (maybe) do something with the args.
 	
     $url = wp_get_attachment_url( $attachment_id );
+	global $att_id;
+
 	echo $att_id;
 	exit;
 }
