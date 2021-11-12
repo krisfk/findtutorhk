@@ -359,7 +359,7 @@ $(function() {
     $('.open-step-btn-4').click(function() {
 
         var TutorGender = $('input[name="TutorGender"]:checked').val();
-
+        var error_txt = '';
         if (!TutorGender) {
             error_txt += '請選擇導師姓別\n';
         }
