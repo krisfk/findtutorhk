@@ -300,7 +300,7 @@ $(function() {
 
         var StudentName = $('input[name="StudentName"]').val();
         var MobileTel = $('input[name="MobileTel"]').val();
-
+        var error_txt = '';
         if (!StudentName) {
             error_txt +=
                 '請輸入聯絡人姓名.\n';
@@ -311,8 +311,12 @@ $(function() {
                 '手提電話格式不正確.<br/>';
         }
 
-        $('.student-step').fadeOut(0);
-        $('.student-step-2').fadeIn(0);
+        if (!error_txt) {
+            $('.student-step').fadeOut(0);
+            $('.student-step-2').fadeIn(0);
+        } else {
+            alert(error_txt);
+        }
 
 
     });
