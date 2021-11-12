@@ -32,7 +32,7 @@ get_header();
 
 
                 <?php
-                echo 9999;
+                echo 99999;
 echo do_shortcode('[contact-form-7 id="64" title="student register"]');
 ?>
                 <!-- 家長或學生可以透過本站網上登記找尋補習導師，一般而言，我們會在短時間內成功找到合適的導師。
