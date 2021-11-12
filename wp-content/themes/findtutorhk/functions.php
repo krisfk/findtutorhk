@@ -730,4 +730,14 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
   //do something.
 }
 
+
+
+add_action('wpcf7_before_send_mail', 'save_application_form' );
+ 
+function save_application_form($wpcf7) {
+    $submission = WPCF7_Submission::get_instance();
+    $files = $submission->uploaded_files();
+	print_r($files);
+	exit;
+}
 	
