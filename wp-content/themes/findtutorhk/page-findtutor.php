@@ -32,7 +32,7 @@ get_header();
 
 
                 <?php
-                echo 999999;
+                // echo 999999;
 echo do_shortcode('[contact-form-7 id="64" title="student register"]');
 ?>
                 <!-- 家長或學生可以透過本站網上登記找尋補習導師，一般而言，我們會在短時間內成功找到合適的導師。
@@ -308,7 +308,7 @@ $(function() {
 
         if (!(/^[0-9]{8}$/.test(MobileTel))) {
             error_txt +=
-                '手提電話格式不正確.<br/>';
+                '手提電話格式不正確.\n';
         }
 
         if (!error_txt) {
