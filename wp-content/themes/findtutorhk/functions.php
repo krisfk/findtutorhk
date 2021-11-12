@@ -715,6 +715,10 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 
 
 	print_r($submitted_files);
+
+	update_field( 'file_upload', $submitted_files, $post_id );
+
+
 	// echo  '<script type="text/javascript">';
 	// alert(7);/
 	// echo'</script>';
