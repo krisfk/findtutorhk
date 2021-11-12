@@ -715,17 +715,18 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 
 
 	// print_r($submitted_files);
-	// echo $submitted_files['cvfile'][0];
+	echo $submitted_files['cvfile'][0];
+	
 // echo $post_id;
 //field_618eda4d14ef9 cv
-	update_field( 'field_618eda4d14ef9', 83, $post_id );
+	update_field( 'show_cv', $submitted_files['cvfile'][0], $post_id );
 
 
 	// echo  '<script type="text/javascript">';
 	// alert(7);/
 	// echo'</script>';
 	// echo 43242;
-	// exit;
+	exit;
   //do something.
 }
 
