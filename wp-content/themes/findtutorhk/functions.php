@@ -718,14 +718,14 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 	// echo $submitted_files['cvfile'][0];
 // echo $post_id;
 //field_618eda4d14ef9 cv
-	update_field( 'field_618eda4d14ef9', 'https://findtutorhk.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-05-at-6.22.44-PM.jpeg', $post_id );
+	update_field( 'field_618eda4d14ef9', 29, $post_id );
 
 
 	// echo  '<script type="text/javascript">';
 	// alert(7);/
 	// echo'</script>';
 	// echo 43242;
-	// exit;
+	exit;
   //do something.
 }
 
