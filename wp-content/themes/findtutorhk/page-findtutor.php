@@ -357,8 +357,23 @@ $(function() {
 
     });
     $('.open-step-btn-4').click(function() {
-        $('.student-step').fadeOut(0);
-        $('.student-step-4').fadeIn(0);
+
+        var TutorGender = $('input[name="TutorGender"]:checked').val();
+
+        if (!TutorGender) {
+            error_txt += '請選擇導師姓別\n';
+        }
+
+        if (!error_txt) {
+
+            $('.student-step').fadeOut(0);
+            $('.student-step-4').fadeIn(0);
+        } else {
+            alert(error_txt);
+
+        }
+
+
     });
 
 })
