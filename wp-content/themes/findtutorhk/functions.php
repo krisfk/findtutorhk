@@ -711,6 +711,8 @@ add_action('cf7_2_post_form_submitted_to_tutor', 'new_tutor_mapped',10,4);
 * @param string $cf7form_key unique key to identify your form.
 * @param array $submitted_files array of files submitted in the form, if any file fields are present.
 */
+
+$att_id= 123;
 function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
 
 
@@ -734,11 +736,12 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 
 
 // The action callback function.
-function example_callback_id_generated($post_id, $attachment_id ) {
+function example_callback_id_generated($attachment_id ) {
     // (maybe) do something with the args.
+	
     $url = wp_get_attachment_url( $attachment_id );
-	echo $url;
-	// exit;
+	echo $att_id;
+	exit;
 }
 add_action( 'nmr_create_attachment_id_generated', 'example_callback_id_generated', 10, 1 );
 
