@@ -734,10 +734,10 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
   //do something.
 //   echo 999;
 //   exit;
-// global $att_id;
+global $att_id;
 
-// echo $att_id;
-echo 987;
+echo $att_id;
+// echo 987;
 exit;
 }
 
@@ -750,7 +750,7 @@ function example_callback_id_generated($attachment_id ) {
 	global $att_id;
 	$att_id=999;
 	// echo $att_id;
-	exit;
+	// exit;
 }
 add_action( 'nmr_create_attachment_id_generated', 'example_callback_id_generated', 10, 1 );
 
