@@ -725,7 +725,7 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 	// alert(7);/
 	// echo'</script>';
 	// echo 43242;
-	exit;
+	// exit;
   //do something.
 }
 
