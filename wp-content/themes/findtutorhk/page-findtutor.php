@@ -289,66 +289,77 @@ echo do_shortcode('[contact-form-7 id="64" title="student register"]');
 var $ = jQuery;
 $(function() {
 
+    var foundin = $('select[name="location"] option:contains("optgroup-")');
+    $.each(foundin, function(value) {
+        var updated = $(this).val().replace('optgroup-', '');
+        $(this).nextUntil('option:contains("endoptgroup")').wrapAll('<optgroup label="' + updated +
+            '"></optgroup>');
+    });
+    $('select[name="location"] option:contains("optgroup-")').remove();
+    $('select[name="location"] option:contains("endoptgroup")').remove();
+});
+
+
+$('.student-step').fadeOut(0);
+$('.student-step-1').fadeIn(0);
+
+$('.open-step-btn-1').click(function() {
     $('.student-step').fadeOut(0);
     $('.student-step-1').fadeIn(0);
+});
+$('.open-step-btn-2').click(function() {
 
-    $('.open-step-btn-1').click(function() {
+    var StudentName = $('input[name="StudentName"]').val();
+    var MobileTel = $('input[name="MobileTel"]').val();
+    var error_txt = '';
+    if (!StudentName) {
+        error_txt +=
+            '請輸入聯絡人姓名.\n';
+    }
+
+    if (!(/^[0-9]{8}$/.test(MobileTel))) {
+        error_txt +=
+            '手提電話格式不正確.\n';
+    }
+
+    if (!error_txt) {
         $('.student-step').fadeOut(0);
-        $('.student-step-1').fadeIn(0);
-    });
-    $('.open-step-btn-2').click(function() {
-
-        var StudentName = $('input[name="StudentName"]').val();
-        var MobileTel = $('input[name="MobileTel"]').val();
-        var error_txt = '';
-        if (!StudentName) {
-            error_txt +=
-                '請輸入聯絡人姓名.\n';
-        }
-
-        if (!(/^[0-9]{8}$/.test(MobileTel))) {
-            error_txt +=
-                '手提電話格式不正確.\n';
-        }
-
-        if (!error_txt) {
-            $('.student-step').fadeOut(0);
-            $('.student-step-2').fadeIn(0);
-        } else {
-            alert(error_txt);
-        }
+        $('.student-step-2').fadeIn(0);
+    } else {
+        alert(error_txt);
+    }
 
 
-    });
-    $('.open-step-btn-3').click(function() {
+});
+$('.open-step-btn-3').click(function() {
 
-        var location = $('select[name="location"]').val();
-        var gender = $('input[name="gender"]:checked').val();
+    var location = $('select[name="location"]').val();
+    var gender = $('input[name="gender"]:checked').val();
 
-        var error_txt = '';
+    var error_txt = '';
 
-        if (!location) {
-            error_txt += '請選擇補習地點\n';
-        }
+    if (!location) {
+        error_txt += '請選擇補習地點\n';
+    }
 
-        if (!gender) {
-            error_txt += '請選擇學生姓別\n';
-        }
+    if (!gender) {
+        error_txt += '請選擇學生姓別\n';
+    }
 
-        if (!error_txt) {
-            $('.student-step').fadeOut(0);
-            $('.student-step-3').fadeIn(0);
-        } else {
-            alert(error_txt);
-        }
-
-
-
-    });
-    $('.open-step-btn-4').click(function() {
+    if (!error_txt) {
         $('.student-step').fadeOut(0);
-        $('.student-step-4').fadeIn(0);
-    });
+        $('.student-step-3').fadeIn(0);
+    } else {
+        alert(error_txt);
+    }
+
+
+
+});
+$('.open-step-btn-4').click(function() {
+$('.student-step').fadeOut(0);
+$('.student-step-4').fadeIn(0);
+});
 
 })
 </script>
