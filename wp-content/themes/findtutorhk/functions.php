@@ -728,13 +728,13 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 	// echo 43242;
 	// exit;
   //do something.
-  echo 999;
-  exit;
+//   echo 999;
+//   exit;
 }
 
 
 // The action callback function.
-function example_callback_id_generated( $attachment_id ) {
+function example_callback_id_generated($post_id, $attachment_id ) {
     // (maybe) do something with the args.
     $url = wp_get_attachment_url( $attachment_id );
 	echo $url;
