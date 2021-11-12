@@ -712,8 +712,8 @@ add_action('cf7_2_post_form_submitted_to_tutor', 'new_tutor_mapped',10,4);
 * @param array $submitted_files array of files submitted in the form, if any file fields are present.
 */
 
-global $att_id;
-$att_id= 123;
+global $upload_file_id;
+// $att_id= 123;
 
 function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
 
@@ -734,9 +734,9 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
   //do something.
 //   echo 999;
 //   exit;
-global $att_id;
+global $upload_file_id;
 
-echo $att_id;
+echo $upload_file_id;
 // echo 987;
 exit;
 }
@@ -747,8 +747,9 @@ function example_callback_id_generated($attachment_id ) {
     // (maybe) do something with the args.
 	
     $url = wp_get_attachment_url( $attachment_id );
-	global $att_id;
-	$att_id=999;
+	global $upload_file_id;
+	$upload_file_id=  $attachment_id ;
+	
 	// echo $att_id;
 	// exit;
 }
