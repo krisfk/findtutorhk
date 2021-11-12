@@ -711,7 +711,7 @@ add_action('cf7_2_post_form_submitted_to_tutor', 'new_tutor_mapped',10,4);
 * @param string $cf7form_key unique key to identify your form.
 * @param array $submitted_files array of files submitted in the form, if any file fields are present.
 */
-function new_student_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
+function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
 
 
 	print_r($submitted_files);
