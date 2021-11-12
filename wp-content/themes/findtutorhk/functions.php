@@ -731,14 +731,23 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 }
 
 
-
-add_action('wpcf7_before_send_mail', 'save_application_form' );
- 
-function save_application_form($wpcf7) {
-    $submission = WPCF7_Submission::get_instance();
-    $files = $submission->uploaded_files();
-	echo 111;
-	print_r($files);
+// The action callback function.
+function example_callback_id_generated( $attachment_id ) {
+    // (maybe) do something with the args.
+    $url = wp_get_attachment_url( $attachment_id );
+	echo $url;
 	exit;
 }
+add_action( 'nmr_create_attachment_id_generated', 'example_callback_id_generated', 10, 1 );
+
+
+// add_action('wpcf7_before_send_mail', 'save_application_form' );
+ 
+// function save_application_form($wpcf7) {
+//     $submission = WPCF7_Submission::get_instance();
+//     $files = $submission->uploaded_files();
+// 	echo 111;
+// 	print_r($files);
+// 	exit;
+// }
 	
