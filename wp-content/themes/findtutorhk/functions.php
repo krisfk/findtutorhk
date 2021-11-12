@@ -714,7 +714,8 @@ add_action('cf7_2_post_form_submitted_to_tutor', 'new_tutor_mapped',10,4);
 function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
 
 
-	print_r($submitted_files);
+	// print_r($submitted_files);
+	echo $submitted_files['cvfile'][0];
 echo $post_id;
 //field_618eda4d14ef9 cv
 	update_field( 'field_618eda4d14ef9', $submitted_files, $post_id );
