@@ -736,9 +736,11 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 //   exit;
 global $upload_file_id;
 
-echo $upload_file_id;
+// echo $upload_file_id;
+	update_field( 'field_618eda4d14ef9', $upload_file_id, $post_id );
+
 // echo 987;
-exit;
+// exit;
 }
 
 
