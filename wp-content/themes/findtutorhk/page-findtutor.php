@@ -377,7 +377,9 @@ $(function() {
     });
 
     document.addEventListener('wpcf7submit', function(event) {
-        alert("Fires only on the wpcf7submit event")
+
+        $('.form-container').html('我們已收到你的資訊，如有合適的導師會盡快聯絡您，謝謝。')
+        // alert("Fires only on the wpcf7submit event")
         // Your code
     }, false);
 
