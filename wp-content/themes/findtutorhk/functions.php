@@ -712,7 +712,9 @@ add_action('cf7_2_post_form_submitted_to_tutor', 'new_tutor_mapped',10,4);
 * @param array $submitted_files array of files submitted in the form, if any file fields are present.
 */
 
+global $att_id;
 $att_id= 123;
+
 function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
 
 
