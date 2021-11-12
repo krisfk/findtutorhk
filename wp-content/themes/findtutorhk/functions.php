@@ -698,7 +698,29 @@ function add_slug_body_class( $classes ) {
 	$classes[] = $post->post_type . '-' . $post->post_name;
 	}
 	return $classes;
-	}
-	add_filter( 'body_class', 'add_slug_body_class' );
-	
+}
+add_filter( 'body_class', 'add_slug_body_class' );
+
+
+
+add_action('cf7_2_post_form_submitted_to_tutor', 'new_tutor_mapped',10,4);
+/**
+* Function to take further action once form has been submitted and saved as a post.  Note this action is only fired for submission which has been submitted as opposed to saved as drafts.
+* @param string $post_id new post ID to which submission was saved.
+* @param array $cf7_form_data complete set of data submitted in the form as an array of field-name=>value pairs.
+* @param string $cf7form_key unique key to identify your form.
+* @param array $submitted_files array of files submitted in the form, if any file fields are present.
+*/
+function new_student_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
+
+
+	print_r($submitted_files);
+	// echo  '<script type="text/javascript">';
+	// alert(7);/
+	// echo'</script>';
+	// echo 43242;
+	// exit;
+  //do something.
+}
+
 	
