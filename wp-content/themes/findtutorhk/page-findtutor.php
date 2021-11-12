@@ -334,7 +334,7 @@ $(function() {
     $('.open-step-btn-3').click(function() {
 
         var location = $('select[name="location"]').val();
-        var gender = $('input[name="gender"]:checked').val();
+        var gender = $('select[name="gender"]').val();
 
         var error_txt = '';
 
@@ -375,6 +375,12 @@ $(function() {
 
 
     });
+
+    document.addEventListener('wpcf7submit', function(event) {
+        alert("Fires only on the wpcf7submit event")
+        // Your code
+    }, false);
+
 
 })
 </script>
