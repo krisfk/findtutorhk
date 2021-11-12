@@ -734,9 +734,9 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
   //do something.
 //   echo 999;
 //   exit;
-global $att_id;
+// global $att_id;
 
-echo $att_id;
+// echo $att_id;
 echo 987;
 exit;
 }
