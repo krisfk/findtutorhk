@@ -321,8 +321,29 @@ $(function() {
 
     });
     $('.open-step-btn-3').click(function() {
-        $('.student-step').fadeOut(0);
-        $('.student-step-3').fadeIn(0);
+
+        var location = $('select[name="location"]').val();
+        var gender = $('input[name="gender"]').val();
+
+        var error_txt = '';
+
+        if (!location) {
+            error_txt += '請選擇補習地點\n';
+        }
+
+        if (!gender) {
+            error_txt += '請選擇學生姓別\n';
+        }
+
+        if (!error_txt) {
+            $('.student-step').fadeOut(0);
+            $('.student-step-3').fadeIn(0);
+        } else {
+            alert(error_txt);
+        }
+
+
+
     });
     $('.open-step-btn-4').click(function() {
         $('.student-step').fadeOut(0);
