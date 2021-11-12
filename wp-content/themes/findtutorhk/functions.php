@@ -737,6 +737,7 @@ add_action('wpcf7_before_send_mail', 'save_application_form' );
 function save_application_form($wpcf7) {
     $submission = WPCF7_Submission::get_instance();
     $files = $submission->uploaded_files();
+	echo 111;
 	print_r($files);
 	exit;
 }
