@@ -713,12 +713,14 @@ add_action('cf7_2_post_form_submitted_to_tutor', 'new_tutor_mapped',10,4);
 */
 
 global $upload_file_id;
+global $upload_idx;
+$upload_idx=1;
 // $att_id= 123;
 
 function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
 
 
-	print_r($submitted_files);
+	// print_r($submitted_files);
 	// echo $submitted_files['cvfile'][0];
 	
 // echo $post_id;
@@ -735,11 +737,13 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 //   echo 999;
 //   exit;
 // print_r($cf7_form_data)
-exit;
-global $upload_file_id;
+// exit;
+global $upload_file_id_1;
+global $upload_file_id_2;
 
 // echo $upload_file_id;
-	update_field( 'field_618eda4d14ef9', $upload_file_id, $post_id );
+	update_field( 'field_618eda4d14ef9', $upload_file_id_1, $post_id );
+	update_field( 'field_618fc321b3827', $upload_file_id_2, $post_id );
 
 // echo 987;
 // exit;
@@ -751,8 +755,20 @@ function example_callback_id_generated($attachment_id ) {
     // (maybe) do something with the args.
 	
     $url = wp_get_attachment_url( $attachment_id );
-	global $upload_file_id;
-	$upload_file_id=  $attachment_id ;
+	global $upload_file_id_1;
+	global $upload_file_id_2;
+	global $upload_idx;
+
+	if($upload_idx===1)
+	{
+		$upload_file_id_1=$attachment_id ;
+		$upload_idx++;
+	}
+	
+	if($upload_idx===2)
+	{
+		$upload_file_id_2=$attachment_id ;
+	}
 	
 	// echo $att_id;
 	// exit;
