@@ -718,7 +718,7 @@ global $upload_file_id;
 function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_files){
 
 
-	// print_r($submitted_files);
+	print_r($submitted_files);
 	// echo $submitted_files['cvfile'][0];
 	
 // echo $post_id;
@@ -735,7 +735,7 @@ function new_tutor_mapped($post_id, $cf7_form_data, $cf7form_key, $submitted_fil
 //   echo 999;
 //   exit;
 // print_r($cf7_form_data)
-// exit;
+exit;
 global $upload_file_id;
 
 // echo $upload_file_id;
